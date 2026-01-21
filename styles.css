@@ -154,10 +154,16 @@ h4 {
 
 .hero-image {
     width: 100%;
-    height: 100%;
+    height: 120%;
+    /* Increased height for parallax */
+    position: absolute;
+    top: -10%;
+    /* Start slightly higher */
+    left: 0;
     background: url('hero-bg.png');
     background-size: cover;
-    background-position: center;
+    background-position: center bottom;
+    /* Align to bottom so sky is visible */
     background-repeat: no-repeat;
 }
 
