@@ -17,13 +17,13 @@ hamburger.addEventListener('click', () => {
     hamburger.classList.toggle('active');
 });
 
-// Smooth scrolling for navigation links
+// Smooth scrolling for navigation links (only for same-page anchors)
 document.querySelectorAll('.nav-link').forEach(link => {
-    link.addEventListener('click', (e) => {
-        const href = link.getAttribute('href');
+    const href = link.getAttribute('href');
 
-        // Only prevent default for same-page anchors (links starting with #)
-        if (href && href.startsWith('#')) {
+    // Only add event listener for same-page anchor links
+    if (href && href.startsWith('#')) {
+        link.addEventListener('click', (e) => {
             e.preventDefault();
             const targetId = href;
             const targetSection = document.querySelector(targetId);
@@ -39,14 +39,8 @@ document.querySelectorAll('.nav-link').forEach(link => {
                 navMenu.classList.remove('active');
                 hamburger.classList.remove('active');
             }
-        } else {
-            // For external links (like destinations.html), allow default navigation
-            // Just close mobile menu if open
-            navMenu.classList.remove('active');
-            hamburger.classList.remove('active');
-            // Don't prevent default - let the browser navigate normally
-        }
-    });
+        });
+    }
 });
 
 // Intersection Observer for animations
