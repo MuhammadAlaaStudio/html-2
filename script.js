@@ -20,18 +20,27 @@ hamburger.addEventListener('click', () => {
 // Smooth scrolling for navigation links
 document.querySelectorAll('.nav-link').forEach(link => {
     link.addEventListener('click', (e) => {
-        e.preventDefault();
-        const targetId = link.getAttribute('href');
-        const targetSection = document.querySelector(targetId);
-        
-        if (targetSection) {
-            targetSection.scrollIntoView({ behavior: 'smooth' });
-            
-            // Update active link
-            document.querySelectorAll('.nav-link').forEach(l => l.classList.remove('active'));
-            link.classList.add('active');
-            
-            // Close mobile menu if open
+        const href = link.getAttribute('href');
+
+        // Only prevent default for same-page anchors
+        if (href.startsWith('#')) {
+            e.preventDefault();
+            const targetId = href;
+            const targetSection = document.querySelector(targetId);
+
+            if (targetSection) {
+                targetSection.scrollIntoView({ behavior: 'smooth' });
+
+                // Update active link
+                document.querySelectorAll('.nav-link').forEach(l => l.classList.remove('active'));
+                link.classList.add('active');
+
+                // Close mobile menu if open
+                navMenu.classList.remove('active');
+                hamburger.classList.remove('active');
+            }
+        } else {
+            // For external links, just close mobile menu
             navMenu.classList.remove('active');
             hamburger.classList.remove('active');
         }
@@ -126,7 +135,7 @@ const navLinks = document.querySelectorAll('.nav-link');
 
 window.addEventListener('scroll', () => {
     let current = '';
-    
+
     sections.forEach(section => {
         const sectionTop = section.offsetTop;
         const sectionHeight = section.clientHeight;
@@ -134,7 +143,7 @@ window.addEventListener('scroll', () => {
             current = section.getAttribute('id');
         }
     });
-    
+
     navLinks.forEach(link => {
         link.classList.remove('active');
         if (link.getAttribute('href') === `#${current}`) {

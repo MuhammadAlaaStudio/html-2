@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Destinations - Explore Istanbul's Iconic Landmarks | Istanbul Dreams Travel</title>
+    <meta name="description"
+        content="Discover Istanbul's most breathtaking destinations including Hagia Sophia, Blue Mosque, Grand Bazaar, Topkapi Palace, and more. Plan your perfect Istanbul adventure.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Playfair+Display:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="destinations.css">
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="container nav-container">
+            <div class="logo">
+                <a href="index.html"
+                    style="text-decoration: none; color: inherit; display: flex; align-items: center; gap: 10px;">
+                    <span class="logo-icon">✈</span>
+                    <span class="logo-text">Istanbul Dreams</span>
+                </a>
+            </div>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="destinations.html" class="nav-link active">Destinations</a></li>
+                <li><a href="index.html#packages" class="nav-link">Packages</a></li>
+                <li><a href="index.html#experiences" class="nav-link">Experiences</a></li>
+                <li><a href="index.html#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <button class="cta-button" onclick="window.location.href='index.html#contact'">Book Now</button>
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Hero -->
+    <section class="page-hero">
+        <div class="hero-background">
+            <div class="hero-overlay"></div>
+            <div class="hero-image-dest"></div>
+        </div>
+        <div class="container hero-content-dest">
+            <h1 class="page-title">Discover Istanbul</h1>
+            <p class="page-subtitle">Explore the timeless beauty of the city where East meets West</p>
+            <div class="breadcrumb">
+                <a href="index.html">Home</a> / <span>Destinations</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Destinations Overview -->
+    <section class="destinations-intro">
+        <div class="container">
+            <div class="intro-content">
+                <h2 class="intro-title">A City of Wonders</h2>
+                <p class="intro-text">Istanbul is a mesmerizing blend of ancient history and modern vibrancy. From
+                    Byzantine basilicas to Ottoman palaces, from bustling bazaars to serene Bosphorus views, every
+                    corner tells a story. Let us guide you through the most iconic landmarks and hidden gems of this
+                    magnificent city.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Destinations -->
+    <section class="featured-destinations">
+        <div class="container">
+            <!-- Hagia Sophia -->
+            <div class="destination-detail" data-aos="fade-up">
+                <div class="detail-image hagia-sophia-bg">
+                    <div class="detail-badge">Must Visit</div>
+                </div>
+                <div class="detail-content">
+                    <h2 class="detail-title">Hagia Sophia</h2>
+                    <div class="detail-meta">
+                        <span class="meta-tag">📍 Sultanahmet Square</span>
+                        <span class="meta-tag">⏱ 2-3 hours</span>
+                        <span class="meta-tag">💰 Free Entry</span>
+                    </div>
+                    <p class="detail-description">
+                        A masterpiece of Byzantine architecture, Hagia Sophia stands as one of the greatest surviving
+                        examples of Byzantine architecture. Built in 537 AD, this architectural marvel has served as a
+                        cathedral, mosque, and now a museum. Its massive dome, stunning mosaics, and rich history make
+                        it an absolute must-see.
+                    </p>
+                    <div class="detail-highlights">
+                        <h3>Highlights:</h3>
+                        <ul>
+                            <li>✨ Magnificent Byzantine dome spanning 31 meters</li>
+                            <li>✨ Stunning 6th-century mosaics and Islamic calligraphy</li>
+                            <li>✨ Imperial Gate and Marble Door</li>
+                            <li>✨ Upper gallery with panoramic views</li>
+                            <li>✨ Weeping Column with healing powers legend</li>
+                        </ul>
+                    </div>
+                    <div class="detail-tips">
+                        <h4>💡 Visitor Tips:</h4>
+                        <p>Visit early morning to avoid crowds. Dress modestly. Photography is allowed but no flash.
+                            Audio guides available in multiple languages.</p>
+                    </div>
+                    <button class="detail-btn">Add to Itinerary</button>
+                </div>
+            </div>
+
+            <!-- Blue Mosque -->
+            <div class="destination-detail reverse" data-aos="fade-up">
+                <div class="detail-image blue-mosque-bg">
+                    <div class="detail-badge">Iconic</div>
+                </div>
+                <div class="detail-content">
+                    <h2 class="detail-title">Blue Mosque (Sultan Ahmed Mosque)</h2>
+                    <div class="detail-meta">
+                        <span class="meta-tag">📍 Sultanahmet</span>
+                        <span class="meta-tag">⏱ 1-2 hours</span>
+                        <span class="meta-tag">💰 Free Entry</span>
+                    </div>
+                    <p class="detail-description">
+                        The Blue Mosque is Istanbul's most photogenic building with its six minarets and cascading
+                        domes. Built between 1609-1616, it's named for the beautiful blue tiles adorning its interior
+                        walls. Still functioning as a mosque, it welcomes visitors outside prayer times.
+                    </p>
+                    <div class="detail-highlights">
+                        <h3>Highlights:</h3>
+                        <ul>
+                            <li>✨ Over 20,000 handmade blue Iznik tiles</li>
+                            <li>✨ Six towering minarets (unique for its time)</li>
+                            <li>✨ 260 stained glass windows</li>
+                            <li>✨ Massive central dome and semi-domes</li>
+                            <li>✨ Intricate calligraphy and geometric patterns</li>
+                        </ul>
+                    </div>
+                    <div class="detail-tips">
+                        <h4>💡 Visitor Tips:</h4>
+                        <p>Remove shoes before entering. Women should cover their heads. Avoid visiting during prayer
+                            times (5 times daily). Free entrance but donations appreciated.</p>
+                    </div>
+                    <button class="detail-btn">Add to Itinerary</button>
+                </div>
+            </div>
+
+            <!-- Grand Bazaar -->
+            <div class="destination-detail" data-aos="fade-up">
+                <div class="detail-image grand-bazaar-bg">
+                    <div class="detail-badge">Shopping Paradise</div>
+                </div>
+                <div class="detail-content">
+                    <h2 class="detail-title">Grand Bazaar (Kapalıçarşı)</h2>
+                    <div class="detail-meta">
+                        <span class="meta-tag">📍 Beyazıt</span>
+                        <span class="meta-tag">⏱ 3-4 hours</span>
+                        <span class="meta-tag">💰 Free Entry</span>
+                    </div>
+                    <p class="detail-description">
+                        One of the largest and oldest covered markets in the world, the Grand Bazaar is a shopper's
+                        paradise. With over 4,000 shops spread across 61 covered streets, you'll find everything from
+                        Turkish carpets and ceramics to jewelry, spices, and antiques.
+                    </p>
+                    <div class="detail-highlights">
+                        <h3>Highlights:</h3>
+                        <ul>
+                            <li>✨ 4,000+ shops in 61 covered streets</li>
+                            <li>✨ Traditional Turkish carpets and kilims</li>
+                            <li>✨ Handcrafted jewelry and precious stones</li>
+                            <li>✨ Authentic Turkish ceramics and pottery</li>
+                            <li>✨ Spices, Turkish delight, and local delicacies</li>
+                        </ul>
+                    </div>
+                    <div class="detail-tips">
+                        <h4>💡 Visitor Tips:</h4>
+                        <p>Bargaining is expected and part of the experience. Start at 50% of asking price. Closed
+                            Sundays. Watch for pickpockets in crowded areas. Try Turkish tea offered by shopkeepers.</p>
+                    </div>
+                    <button class="detail-btn">Add to Itinerary</button>
+                </div>
+            </div>
+
+            <!-- Bosphorus -->
+            <div class="destination-detail reverse" data-aos="fade-up">
+                <div class="detail-image bosphorus-bg">
+                    <div class="detail-badge">Scenic</div>
+                </div>
+                <div class="detail-content">
+                    <h2 class="detail-title">Bosphorus Strait</h2>
+                    <div class="detail-meta">
+                        <span class="meta-tag">📍 Various Piers</span>
+                        <span class="meta-tag">⏱ 2-6 hours</span>
+                        <span class="meta-tag">💰 $15-50</span>
+                    </div>
+                    <p class="detail-description">
+                        The Bosphorus Strait divides Europe and Asia, and a cruise along its waters is one of Istanbul's
+                        most memorable experiences. Admire Ottoman palaces, wooden mansions, modern bridges, and ancient
+                        fortresses while sailing between two continents.
+                    </p>
+                    <div class="detail-highlights">
+                        <h3>Highlights:</h3>
+                        <ul>
+                            <li>✨ Dolmabahçe and Beylerbeyi Palaces</li>
+                            <li>✨ Rumeli and Anadolu Fortresses</li>
+                            <li>✨ Bosphorus Bridge and Fatih Sultan Mehmet Bridge</li>
+                            <li>✨ Historic waterfront mansions (yalıs)</li>
+                            <li>✨ Maiden's Tower and Ortaköy Mosque</li>
+                        </ul>
+                    </div>
+                    <div class="detail-tips">
+                        <h4>💡 Visitor Tips:</h4>
+                        <p>Sunset cruises offer the best views. Public ferries are cheaper than private tours. Bring a
+                            jacket as it gets windy. Upper deck provides best photo opportunities.</p>
+                    </div>
+                    <button class="detail-btn">Add to Itinerary</button>
+                </div>
+            </div>
+
+            <!-- Topkapi Palace -->
+            <div class="destination-detail" data-aos="fade-up">
+                <div class="detail-image topkapi-bg">
+                    <div class="detail-badge">Historical</div>
+                </div>
+                <div class="detail-content">
+                    <h2 class="detail-title">Topkapı Palace</h2>
+                    <div class="detail-meta">
+                        <span class="meta-tag">📍 Sultanahmet</span>
+                        <span class="meta-tag">⏱ 3-4 hours</span>
+                        <span class="meta-tag">💰 $20</span>
+                    </div>
+                    <p class="detail-description">
+                        For nearly 400 years, Topkapı Palace was the lavish residence of Ottoman sultans. This sprawling
+                        complex showcases imperial treasures, sacred relics, and stunning architecture. The Harem
+                        section offers a glimpse into the private lives of the royal family.
+                    </p>
+                    <div class="detail-highlights">
+                        <h3>Highlights:</h3>
+                        <ul>
+                            <li>✨ Imperial Treasury with priceless jewels</li>
+                            <li>✨ Sacred relics including Prophet Muhammad's belongings</li>
+                            <li>✨ Harem quarters with 400+ rooms</li>
+                            <li>✨ Stunning Bosphorus views from terraces</li>
+                            <li>✨ Imperial kitchens and Chinese porcelain collection</li>
+                        </ul>
+                    </div>
+                    <div class="detail-tips">
+                        <h4>💡 Visitor Tips:</h4>
+                        <p>Harem requires separate ticket. Closed Tuesdays. Audio guide highly recommended. Allow 3-4
+                            hours for full visit. Gardens offer peaceful rest spots.</p>
+                    </div>
+                    <button class="detail-btn">Add to Itinerary</button>
+                </div>
+            </div>
+
+            <!-- Basilica Cistern -->
+            <div class="destination-detail reverse" data-aos="fade-up">
+                <div class="detail-image cistern-bg">
+                    <div class="detail-badge">Underground Wonder</div>
+                </div>
+                <div class="detail-content">
+                    <h2 class="detail-title">Basilica Cistern</h2>
+                    <div class="detail-meta">
+                        <span class="meta-tag">📍 Sultanahmet</span>
+                        <span class="meta-tag">⏱ 45-60 minutes</span>
+                        <span class="meta-tag">💰 $10</span>
+                    </div>
+                    <p class="detail-description">
+                        Descend into this atmospheric underground chamber, the largest of several hundred ancient
+                        cisterns beneath Istanbul. Built in the 6th century, it features 336 marble columns and the
+                        mysterious upside-down Medusa head carvings.
+                    </p>
+                    <div class="detail-highlights">
+                        <h3>Highlights:</h3>
+                        <ul>
+                            <li>✨ 336 marble columns in mystical lighting</li>
+                            <li>✨ Two Medusa head column bases</li>
+                            <li>✨ Ancient water reservoir system</li>
+                            <li>✨ Atmospheric classical music</li>
+                            <li>✨ Carp swimming in shallow waters</li>
+                        </ul>
+                    </div>
+                    <div class="detail-tips">
+                        <h4>💡 Visitor Tips:</h4>
+                        <p>Can be slippery, wear appropriate shoes. Cool temperature inside (bring light jacket). Great
+                            for hot summer days. Photography allowed. Short visit but memorable.</p>
+                    </div>
+                    <button class="detail-btn">Add to Itinerary</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- More Destinations Grid -->
+    <section class="more-destinations">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">More Places to Explore</h2>
+                <p class="section-description">Discover additional gems across Istanbul</p>
+            </div>
+            <div class="destinations-grid-small">
+                <div class="small-dest-card" data-aos="zoom-in">
+                    <div class="small-dest-image galata-bg"></div>
+                    <div class="small-dest-content">
+                        <h3>Galata Tower</h3>
+                        <p>Medieval stone tower with panoramic city views</p>
+                        <span class="small-meta">⏱ 1 hour</span>
+                    </div>
+                </div>
+                <div class="small-dest-card" data-aos="zoom-in" data-aos-delay="100">
+                    <div class="small-dest-image spice-bg"></div>
+                    <div class="small-dest-content">
+                        <h3>Spice Bazaar</h3>
+                        <p>Colorful market filled with spices and Turkish delights</p>
+                        <span class="small-meta">⏱ 1-2 hours</span>
+                    </div>
+                </div>
+                <div class="small-dest-card" data-aos="zoom-in" data-aos-delay="200">
+                    <div class="small-dest-image dolmabahce-bg"></div>
+                    <div class="small-dest-content">
+                        <h3>Dolmabahçe Palace</h3>
+                        <p>Opulent 19th-century palace on the Bosphorus</p>
+                        <span class="small-meta">⏱ 2-3 hours</span>
+                    </div>
+                </div>
+                <div class="small-dest-card" data-aos="zoom-in" data-aos-delay="300">
+                    <div class="small-dest-image taksim-bg"></div>
+                    <div class="small-dest-content">
+                        <h3>Taksim Square</h3>
+                        <p>Modern Istanbul's vibrant heart and shopping district</p>
+                        <span class="small-meta">⏱ 2-3 hours</span>
+                    </div>
+                </div>
+                <div class="small-dest-card" data-aos="zoom-in" data-aos-delay="400">
+                    <div class="small-dest-image princes-bg"></div>
+                    <div class="small-dest-content">
+                        <h3>Princes' Islands</h3>
+                        <p>Car-free islands perfect for cycling and relaxation</p>
+                        <span class="small-meta">⏱ Full day</span>
+                    </div>
+                </div>
+                <div class="small-dest-card" data-aos="zoom-in" data-aos-delay="500">
+                    <div class="small-dest-image suleymaniye-bg"></div>
+                    <div class="small-dest-content">
+                        <h3>Süleymaniye Mosque</h3>
+                        <p>Magnificent Ottoman mosque with stunning architecture</p>
+                        <span class="small-meta">⏱ 1-2 hours</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="destinations-cta">
+        <div class="container">
+            <div class="cta-content">
+                <h2 class="cta-title">Ready to Explore Istanbul?</h2>
+                <p class="cta-text">Let our expert guides create the perfect itinerary for your Istanbul adventure</p>
+                <div class="cta-buttons">
+                    <button class="btn btn-primary" onclick="window.location.href='index.html#packages'">View Tour
+                        Packages</button>
+                    <button class="btn btn-secondary" onclick="window.location.href='index.html#contact'">Contact
+                        Us</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <span class="logo-icon">✈</span>
+                        <span class="logo-text">Istanbul Dreams</span>
+                    </div>
+                    <p class="footer-description">Your gateway to unforgettable Istanbul experiences. We craft journeys
+                        that blend history, culture, and luxury.</p>
+                    <div class="social-links">
+                        <a href="#" class="social-link">Facebook</a>
+                        <a href="#" class="social-link">Instagram</a>
+                        <a href="#" class="social-link">Twitter</a>
+                        <a href="#" class="social-link">YouTube</a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4 class="footer-title">Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="destinations.html">Destinations</a></li>
+                        <li><a href="index.html#packages">Packages</a></li>
+                        <li><a href="index.html#experiences">Experiences</a></li>
+                        <li><a href="index.html#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4 class="footer-title">Services</h4>
+                    <ul class="footer-links">
+                        <li><a href="#">Guided Tours</a></li>
+                        <li><a href="#">Hotel Booking</a></li>
+                        <li><a href="#">Airport Transfer</a></li>
+                        <li><a href="#">Custom Packages</a></li>
+                        <li><a href="#">Group Travel</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4 class="footer-title">Newsletter</h4>
+                    <p class="newsletter-text">Subscribe for exclusive deals and travel tips</p>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="Your email" class="newsletter-input">
+                        <button type="submit" class="newsletter-btn">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Istanbul Dreams Travel. All rights reserved.</p>
+                <div class="footer-bottom-links">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                    <a href="#">Cookie Policy</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

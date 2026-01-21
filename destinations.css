@@ -1,0 +1,436 @@
+/* Destinations Page Specific Styles */
+
+/* Page Hero */
+.page-hero {
+    position: relative;
+    height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    margin-top: 70px;
+}
+
+.hero-image-dest {
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 50%, #f093fb 100%);
+    background-size: 400% 400%;
+    animation: gradientShift 15s ease infinite;
+}
+
+.hero-content-dest {
+    position: relative;
+    z-index: 2;
+    text-align: center;
+    color: white;
+}
+
+.page-title {
+    font-size: 4rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    text-shadow: 2px 2px 20px rgba(0, 0, 0, 0.3);
+}
+
+.page-subtitle {
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+    opacity: 0.95;
+}
+
+.breadcrumb {
+    font-size: 1rem;
+    opacity: 0.9;
+}
+
+.breadcrumb a {
+    color: white;
+    text-decoration: none;
+    transition: opacity 0.3s;
+}
+
+.breadcrumb a:hover {
+    opacity: 0.7;
+}
+
+/* Destinations Intro */
+.destinations-intro {
+    padding: 80px 0;
+    background: white;
+}
+
+.intro-content {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.intro-title {
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+    color: var(--dark);
+}
+
+.intro-text {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: #7f8c8d;
+}
+
+/* Featured Destinations */
+.featured-destinations {
+    padding: 60px 0;
+    background: #f8f9fa;
+}
+
+.destination-detail {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+    margin-bottom: 6rem;
+    background: white;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: var(--shadow-md);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.destination-detail:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-lg);
+}
+
+.destination-detail.reverse {
+    direction: rtl;
+}
+
+.destination-detail.reverse .detail-content {
+    direction: ltr;
+}
+
+.detail-image {
+    position: relative;
+    min-height: 500px;
+    background-size: cover;
+    background-position: center;
+}
+
+.hagia-sophia-bg {
+    background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+}
+
+.blue-mosque-bg {
+    background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
+}
+
+.grand-bazaar-bg {
+    background: linear-gradient(135deg, #fa709a 0%, #fee140 100%);
+}
+
+.bosphorus-bg {
+    background: linear-gradient(135deg, #30cfd0 0%, #330867 100%);
+}
+
+.topkapi-bg {
+    background: linear-gradient(135deg, #a8edea 0%, #fed6e3 100%);
+}
+
+.cistern-bg {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+}
+
+.detail-badge {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    background: rgba(255, 255, 255, 0.95);
+    color: var(--dark);
+    padding: 10px 20px;
+    border-radius: 50px;
+    font-weight: 600;
+    font-size: 0.9rem;
+    box-shadow: var(--shadow-sm);
+}
+
+.detail-content {
+    padding: 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.detail-title {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    color: var(--dark);
+}
+
+.detail-meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+.meta-tag {
+    background: #f8f9fa;
+    padding: 8px 16px;
+    border-radius: 50px;
+    font-size: 0.9rem;
+    color: #7f8c8d;
+}
+
+.detail-description {
+    font-size: 1.05rem;
+    line-height: 1.8;
+    color: #7f8c8d;
+    margin-bottom: 2rem;
+}
+
+.detail-highlights {
+    margin-bottom: 2rem;
+}
+
+.detail-highlights h3 {
+    font-size: 1.3rem;
+    margin-bottom: 1rem;
+    color: var(--dark);
+}
+
+.detail-highlights ul {
+    list-style: none;
+    padding: 0;
+}
+
+.detail-highlights li {
+    padding: 0.5rem 0;
+    color: #7f8c8d;
+    font-size: 0.95rem;
+}
+
+.detail-tips {
+    background: linear-gradient(135deg, #667eea15, #764ba215);
+    padding: 1.5rem;
+    border-radius: 15px;
+    margin-bottom: 2rem;
+}
+
+.detail-tips h4 {
+    font-size: 1.1rem;
+    margin-bottom: 0.5rem;
+    color: var(--dark);
+}
+
+.detail-tips p {
+    color: #7f8c8d;
+    font-size: 0.95rem;
+    line-height: 1.6;
+    margin: 0;
+}
+
+.detail-btn {
+    background: var(--gradient-2);
+    color: white;
+    border: none;
+    padding: 15px 40px;
+    border-radius: 50px;
+    font-weight: 600;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all 0.3s;
+    align-self: flex-start;
+}
+
+.detail-btn:hover {
+    transform: translateY(-3px);
+    box-shadow: var(--shadow-md);
+}
+
+/* More Destinations Grid */
+.more-destinations {
+    padding: 80px 0;
+    background: white;
+}
+
+.destinations-grid-small {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+.small-dest-card {
+    background: white;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: var(--shadow-sm);
+    transition: all 0.3s;
+    cursor: pointer;
+}
+
+.small-dest-card:hover {
+    transform: translateY(-10px);
+    box-shadow: var(--shadow-lg);
+}
+
+.small-dest-image {
+    height: 200px;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.galata-bg {
+    background: linear-gradient(135deg, #ffecd2 0%, #fcb69f 100%);
+}
+
+.spice-bg {
+    background: linear-gradient(135deg, #ff9a9e 0%, #fecfef 100%);
+}
+
+.dolmabahce-bg {
+    background: linear-gradient(135deg, #a1c4fd 0%, #c2e9fb 100%);
+}
+
+.taksim-bg {
+    background: linear-gradient(135deg, #fbc2eb 0%, #a6c1ee 100%);
+}
+
+.princes-bg {
+    background: linear-gradient(135deg, #fdcbf1 0%, #e6dee9 100%);
+}
+
+.suleymaniye-bg {
+    background: linear-gradient(135deg, #f6d365 0%, #fda085 100%);
+}
+
+.small-dest-content {
+    padding: 1.5rem;
+}
+
+.small-dest-content h3 {
+    font-size: 1.3rem;
+    margin-bottom: 0.5rem;
+    color: var(--dark);
+}
+
+.small-dest-content p {
+    color: #7f8c8d;
+    font-size: 0.95rem;
+    margin-bottom: 1rem;
+}
+
+.small-meta {
+    display: inline-block;
+    background: #f8f9fa;
+    padding: 5px 12px;
+    border-radius: 50px;
+    font-size: 0.85rem;
+    color: #95a5a6;
+}
+
+/* CTA Section */
+.destinations-cta {
+    padding: 100px 0;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    text-align: center;
+}
+
+.cta-content {
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.cta-title {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.cta-text {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+    opacity: 0.95;
+}
+
+.cta-buttons {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .destination-detail {
+        grid-template-columns: 1fr;
+        gap: 0;
+    }
+
+    .destination-detail.reverse {
+        direction: ltr;
+    }
+
+    .detail-image {
+        min-height: 350px;
+    }
+
+    .detail-content {
+        padding: 2rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .page-title {
+        font-size: 2.5rem;
+    }
+
+    .page-subtitle {
+        font-size: 1.1rem;
+    }
+
+    .intro-title {
+        font-size: 2rem;
+    }
+
+    .detail-title {
+        font-size: 2rem;
+    }
+
+    .detail-meta {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+
+    .cta-title {
+        font-size: 2rem;
+    }
+
+    .cta-buttons {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .cta-buttons .btn {
+        width: 100%;
+        max-width: 300px;
+    }
+
+    .destinations-grid-small {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 480px) {
+    .page-hero {
+        height: 50vh;
+    }
+
+    .detail-content {
+        padding: 1.5rem;
+    }
+
+    .detail-highlights li {
+        font-size: 0.9rem;
+    }
+}
