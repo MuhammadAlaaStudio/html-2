@@ -22,8 +22,8 @@ document.querySelectorAll('.nav-link').forEach(link => {
     link.addEventListener('click', (e) => {
         const href = link.getAttribute('href');
 
-        // Only prevent default for same-page anchors
-        if (href.startsWith('#')) {
+        // Only prevent default for same-page anchors (links starting with #)
+        if (href && href.startsWith('#')) {
             e.preventDefault();
             const targetId = href;
             const targetSection = document.querySelector(targetId);
@@ -40,9 +40,11 @@ document.querySelectorAll('.nav-link').forEach(link => {
                 hamburger.classList.remove('active');
             }
         } else {
-            // For external links, just close mobile menu
+            // For external links (like destinations.html), allow default navigation
+            // Just close mobile menu if open
             navMenu.classList.remove('active');
             hamburger.classList.remove('active');
+            // Don't prevent default - let the browser navigate normally
         }
     });
 });
